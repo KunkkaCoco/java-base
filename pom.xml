@@ -179,7 +179,7 @@
 					<portableConfig>src/main/resources/portable-context-config.xml</portableConfig>
 				</configuration>
 			</plugin>
-			<!-- 开启文件过滤 用于生产环境和开发环境打包 -->
+			<!-- 开启文件过滤 用于生产环境和开发环境打包 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
@@ -199,10 +199,10 @@
 						</resource>
 					</webResources>
 				</configuration>
-			</plugin>
+			</plugin>-->
 		</plugins>
 	</build>
-
+<!--  
 	<profiles>
 
 		<profile>
@@ -222,4 +222,5 @@
 		</profile>
 
 	</profiles>
+	-->
 </project>
