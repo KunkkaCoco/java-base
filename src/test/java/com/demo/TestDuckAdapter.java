@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class TestDuckAdapter {
-	private static Logger logger = LoggerFactory.getLogger(TcmTest.class);
+	private static Logger logger = LoggerFactory.getLogger(TestDuckAdapter.class);
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -24,16 +24,15 @@ public class TestDuckAdapter {
 		System.out.println("AfterClass test##########################################");
 	}
 
-@Test
+	@Test
 	public void testit1() {
-	
 
 		System.out.println("#####################");
-		
-		System.out.println("\ntestit2");
 
+		System.out.println("\ntestit2");
+		logger.debug("&&&&&&&&&&&&&&&&&&&&&&&&&");
 		System.out.println("\n#################");
-	
+
 	}
 
 	@Test
