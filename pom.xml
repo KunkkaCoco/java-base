@@ -3,8 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.maxi</groupId>
-	<artifactId>java7</artifactId>
-	<name>java7</name>
+	<artifactId>java-pattern</artifactId>
+	<name>java-pattern</name>
 	<packaging>war</packaging>
 	<version>1.0.1</version>
 	<url>http://maven.apache.org</url>
@@ -143,7 +143,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>myProject</finalName>
+		<finalName>java-pattern</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
