@@ -1,0 +1,48 @@
+ 
+ map 转json
+	static String map2Json(Map<String, String> map) { 
+	    if (map.isEmpty()) 
+	        return "{}"; 
+	    StringBuilder sb = new StringBuilder(map.size() << 4); 
+	    sb.append('{'); 
+	    Set<String> keys = map.keySet(); 
+	    for (String key : keys) { 
+	        String value = map.get(key); 
+	        sb.append('\"'); 
+	        sb.append(key); 
+	        sb.append('\"'); 
+	        sb.append(':'); 
+	        sb.append('\"'); 
+	        sb.append(value); 
+	        sb.append('\"'); 
+	        sb.append(','); 
+	    } 
+	    // 将最后的 ',' 变为 '}': 
+	    sb.setCharAt(sb.length()-1, '}'); 
+	    return sb.toString(); 
+	 }
+ 
+json的数据形式和js中怎么使用
+ 
+ 1.function showJSON() {   
+    var user =    
+    {    
+        "username":"andy",   
+        "age":20,   
+        "info": { "tel": "123456", "cellphone": "98765"},   
+        "address":   
+           [   
+                {"city":"beijing","postcode":"222333"},   
+                {"city":"newyork","postcode":"555666"}   
+            ]   
+    }   
+       
+    alert(user.username);   
+    alert(user.age);   
+    alert(user.info.cellphone);   
+    alert(user.address[0].city);   
+    alert(user.address[0].postcode);   
+       
+    user.username = "Tom";   
+    alert(user.username);   
+} 

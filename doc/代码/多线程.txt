@@ -1,0 +1,49 @@
+第一种方法实现接口  比较灵活，可以实现多个接口比继承好用
+public class Runner1 implements Runnable{
+	//只要能实现接口就不用继承
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i=0;i<100;i++){
+			System.out.println("runner :"+i);
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Runner1 r = new Runner1();
+//方法调用不会多线程		r.run();
+		Thread thread = new Thread(r);
+		thread.start();
+		for (int i = 0; i < 100; i++) {
+			System.out.println("main thread :"+i);
+		}
+	}
+	
+}
+第二种方法继承  
+
+public class Runner1 extends Thread{
+	//只要能实现接口就不用继承
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		for(int i=0;i<100;i++){
+			System.out.println("runner :"+i);
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Runner1 r = new Runner1();
+
+
+		r.start();
+		for (int i = 0; i < 100; i++) {
+			System.out.println("main thread :"+i);
+		}
+	}
+	
+}
