@@ -5,15 +5,16 @@ public class Triangle1 {
 	public void test() {
 		int n = 10;
 		for (int i = 1; i < n + 1; i++) {
-			for (int j = 0; j < n; j++) {
-				if (j == i) {
-					System.out.println(i);
+			for (int j = 0; j < i; j++) {
+				if (j == i - 1) {
+					System.out.println("*");
 				} else {
-					System.out.print(i);
+					System.out.print("^");
 				}
 
 			}
 		}
+
 	}
 
 	public static void main(String[] args) {
