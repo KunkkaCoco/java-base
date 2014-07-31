@@ -25,7 +25,7 @@ public class MapWithSet {
 			String key = it.next();
 			String value = map.get(key);// 有了键可以通过map集合的get方法获取其对应的值。
 
-			System.out.println("key: " + key + "-->value: " + value);// 获得key和value值
+			System.out.println("key: " + key + "\nvalue: " + value + "\n");// 获得key和value值
 		}
 		System.out.println("**********************");
 
