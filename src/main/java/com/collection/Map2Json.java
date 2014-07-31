@@ -13,17 +13,14 @@ public class Map2Json {
 		}
 		StringBuilder sb = new StringBuilder(map.size() << 4);
 		sb.append('{');
-		Set<String> keys = map.keySet();
-		for (String key : keys) {
-			String value = map.get(key);
-			sb.append('\"');
-			sb.append(key);
-			sb.append('\"');
-			sb.append(':');
-			sb.append('\"');
-			sb.append(value);
-			sb.append('\"');
-			sb.append(',');
+		Set<Map.Entry<String, String>> keys = map.entrySet();
+
+		for (Map.Entry entry : keys) {
+			sb.append("\"");
+			sb.append(entry.getKey());
+			sb.append("\":\"");
+			sb.append(entry.getValue());
+			sb.append("\",");
 		}
 		// 将最后的 ',' 变为 '}':
 		sb.setCharAt(sb.length() - 1, '}');
