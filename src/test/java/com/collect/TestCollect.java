@@ -55,7 +55,7 @@ public class TestCollect {
 		}
 		System.out.println();
 
-		List<Integer> sub2 = test.subList(5, 19); //
+		List<Integer> sub2 = test.subList(5, 9); //
 		logger.debug("----------" + JSON.toJSONString(sub2));
 		logger.debug("----------" + JSON.toJSONString(test));
 	}
