@@ -31,7 +31,7 @@ public class TestDuckAdapter {
 
 		System.out.println("\ntestit2");
 		logger.debug("&&&&&&&&&&&&&&&&&&&&&&&&&");
-		System.out.println("\n##################");
+		System.out.println("\n#################");
 
 	}
 
