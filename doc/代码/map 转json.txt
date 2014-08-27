@@ -17,12 +17,12 @@
 	        sb.append('\"'); 
 	        sb.append(','); 
 	    } 
-	    // 将最后的 ',' 变为 '}': 
+	    // 锟斤拷锟斤拷锟斤拷 ',' 锟斤拷为 '}': 
 	    sb.setCharAt(sb.length()-1, '}'); 
 	    return sb.toString(); 
 	 }
  
-json的数据形式和js中怎么使用
+json锟斤拷锟斤拷锟斤拷锟绞斤拷锟絡s锟斤拷锟斤拷么使锟斤拷
  
  1.function showJSON() {   
     var user =    

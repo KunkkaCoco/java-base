@@ -1,4 +1,4 @@
-1Ã°ÅÝ
+1Ã°ï¿½ï¿½
 
 package com.cn.sort;
 
@@ -32,7 +32,7 @@ public class BubbleSort {
 	}
 
 }
-2/Ñ¡ÔñÅÅÐò
+2/Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 package com.cn.sort;
 
 public class SelectSort {

@@ -1,6 +1,6 @@
-µÚÒ»ÖÖ·½·¨ÊµÏÖ½Ó¿Ú  ±È½ÏÁé»î£¬¿ÉÒÔÊµÏÖ¶à¸ö½Ó¿Ú±È¼Ì³ĞºÃÓÃ
+ï¿½ï¿½Ò»ï¿½Ö·ï¿½ï¿½ï¿½Êµï¿½Ö½Ó¿ï¿½  ï¿½È½ï¿½ï¿½ï¿½î£¬ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¶ï¿½ï¿½ï¿½Ó¿Ú±È¼Ì³Ğºï¿½ï¿½ï¿½
 public class Runner1 implements Runnable{
-	//Ö»ÒªÄÜÊµÏÖ½Ó¿Ú¾Í²»ÓÃ¼Ì³Ğ
+	//Ö»Òªï¿½ï¿½Êµï¿½Ö½Ó¿Ú¾Í²ï¿½ï¿½Ã¼Ì³ï¿½
 
 	@Override
 	public void run() {
@@ -13,7 +13,7 @@ public class Runner1 implements Runnable{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Runner1 r = new Runner1();
-//·½·¨µ÷ÓÃ²»»á¶àÏß³Ì		r.run();
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½		r.run();
 		Thread thread = new Thread(r);
 		thread.start();
 		for (int i = 0; i < 100; i++) {
@@ -22,10 +22,10 @@ public class Runner1 implements Runnable{
 	}
 	
 }
-µÚ¶şÖÖ·½·¨¼Ì³Ğ  
+ï¿½Ú¶ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ì³ï¿½  
 
 public class Runner1 extends Thread{
-	//Ö»ÒªÄÜÊµÏÖ½Ó¿Ú¾Í²»ÓÃ¼Ì³Ğ
+	//Ö»Òªï¿½ï¿½Êµï¿½Ö½Ó¿Ú¾Í²ï¿½ï¿½Ã¼Ì³ï¿½
 
 	@Override
 	public void run() {
