@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <portable-config>
 	<config-file path="WEB-INF/classes/config.properties">
+		<!-- <replace key="mongo.ip">192.168.87.31</replace>
+		<replace key="mongo.port">30030</replace> -->
 	</config-file>
 </portable-config>
