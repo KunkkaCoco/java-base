@@ -189,6 +189,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.1.1</version>
 				<configuration>
+				<outputDirectory>d:/gitspace</outputDirectory>
 					<overlays>
 						<overlay>
 							<excludes>
@@ -216,12 +217,14 @@
 			</activation>
 			<properties>
 				<runtime.env>filters/test</runtime.env>
+				<finalName>filters/test</finalName>
 			</properties>
 		</profile>
 		<profile>
 			<id>prd</id>
 			<properties>
 				<runtime.env>filters/prd</runtime.env>
+				<finalName>filters/prd</finalName>
 			</properties>
 		</profile>
 
