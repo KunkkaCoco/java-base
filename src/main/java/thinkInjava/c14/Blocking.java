@@ -21,7 +21,7 @@ import java.io.Writer;
 
 class Blockable extends Thread {
 	private Peeker peeker;
-	protected TextField state = new TextField(50);
+	protected TextField state = new TextField(40);
 	protected int i;
 
 	protected Blockable(Container c) {
@@ -45,7 +45,7 @@ class Blockable extends Thread {
 class Peeker extends Thread {
 	private Blockable b;
 	private int session;
-	private TextField status = new TextField(50);
+	private TextField status = new TextField(40);
 	private boolean stop = false;
 
 	public Peeker(Blockable b, Container c) {
@@ -66,7 +66,6 @@ class Peeker extends Thread {
 				sleep(100);
 
 			} catch (InterruptedException e) {
-				// TODO
 			}
 		}
 
@@ -347,7 +346,7 @@ public class Blocking extends Applet {
 			}
 		});
 		aFrame.add(applet, BorderLayout.CENTER);
-		aFrame.setSize(400, 550);
+		aFrame.setSize(350, 550);
 		applet.init();
 		applet.start();
 		aFrame.setVisible(true);
