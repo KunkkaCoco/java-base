@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-class Ticker2 extends Thread {
+class Ticker2 extends Thread implements Runnable {
 	private Button b = new Button("Toggle"), incPriority = new Button("up"), decPriority = new Button("down");
 	private TextField t = new TextField(10), pr = new TextField(3); // Display priority
 	private int count = 0;
