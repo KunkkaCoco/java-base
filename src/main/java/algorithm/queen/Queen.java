@@ -55,9 +55,9 @@ public class Queen {
 		for (int y = 1; y <= 8; y++) {
 			for (int x = 1; x <= 8; x++) {
 				if (queen[y] == x) {
-					System.out.print("Q");
+					System.out.print(" Q ");
 				} else {
-					System.out.print(".");
+					System.out.print(" . ");
 				}
 			}
 
