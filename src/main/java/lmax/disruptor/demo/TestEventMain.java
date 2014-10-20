@@ -27,6 +27,7 @@ public class TestEventMain {
 
 		for (long l = 0; l < 20; l++) {
 			producer.say();
+			Thread.sleep(1000);
 		}
 	}
 }
