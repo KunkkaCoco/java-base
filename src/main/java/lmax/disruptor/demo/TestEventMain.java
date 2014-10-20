@@ -23,10 +23,10 @@ public class TestEventMain {
 
 		RingBuffer<TestEvent> ringBuffer = disruptor.getRingBuffer();
 
-		TestEventProducerWithTranslator producer = new TestEventProducerWithTranslator(ringBuffer);
+		TestEventProducer producer = new TestEventProducer(ringBuffer);
 
 		for (long l = 0; l < 20; l++) {
-			producer.say("pony");
+			producer.say();
 		}
 	}
 }
