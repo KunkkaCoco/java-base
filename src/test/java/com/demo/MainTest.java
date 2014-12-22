@@ -7,6 +7,7 @@ public class MainTest {
 		// }
 		String a = "foo";
 		String b = "foo";
+		String c1 = "foo";
 
 		System.out.println(a == b);
 		System.out.println(a.equals(b));
