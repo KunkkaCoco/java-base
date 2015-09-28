@@ -5,6 +5,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.io.File;
+
 /**
 * CloudServiceImpl Tester.
 *
@@ -44,7 +46,8 @@ public void testUpload() throws Exception {
 @Test
 public void testUploadFile() throws Exception {
     String filepath ="/home/maximus/Pictures/img1.jpg";
-    String resutl = cloudService.uploadFile(filepath);
+    File file = new File("/home/maximus/Pictures/img1.jpg");
+    String resutl = cloudService.uploadFile(file,null);
 
 }
     @Test
