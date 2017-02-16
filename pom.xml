@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.maxi</groupId>
 	<artifactId>java-base</artifactId>
@@ -42,18 +42,31 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.8.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.9</version>
+			<scope>runtime</scope>
+		</dependency>
+
+
 		<!-- hibernate -->
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate-version}</version>
-			<exclusions>  
-		        <exclusion>  
-		          <groupId>commons-collections</groupId>  
-		          <artifactId>commons-collections</artifactId>  
-		        </exclusion> 
-		    </exclusions> 
+			<exclusions>
+				<exclusion>
+					<groupId>commons-collections</groupId>
+					<artifactId>commons-collections</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -75,12 +88,12 @@
 			<groupId>com.lmax</groupId>
 			<artifactId>disruptor</artifactId>
 			<version>3.3.0</version>
-			<exclusions>  
-		        <exclusion>  
-		          <groupId>junit</groupId>  
-		          <artifactId>junit</artifactId>  
-		        </exclusion> 
-		    </exclusions> 
+			<exclusions>
+				<exclusion>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- dubbo -->
 		<dependency>
@@ -114,8 +127,8 @@
 
 				<!-- 如果使用jdk-1.6 请排除此依赖， 加入okhttp-jdk1.6 、okio-jdk1.6 -->
 				<!--<exclusion>-->
-					<!--<groupId>com.squareup.okhttp</groupId>-->
-					<!--<artifactId>okhttp</artifactId>-->
+				<!--<groupId>com.squareup.okhttp</groupId>-->
+				<!--<artifactId>okhttp</artifactId>-->
 				<!--</exclusion>-->
 			</exclusions>
 		</dependency>
@@ -175,6 +188,11 @@
 			<artifactId>commons-fileupload</artifactId>
 			<version>${commons-fileupload.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId></groupId>
+			<artifactId>btrace</artifactId>
+		</dependency>
 		<!-- Test -->
 		<dependency>
 			<groupId>org.hamcrest</groupId>
@@ -188,6 +206,7 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -242,29 +261,31 @@
 					</webResources>
 				</configuration>
 			</plugin>-->
+
+
 		</plugins>
 	</build>
-<!--  
-	<profiles>
+	<!--
+		<profiles>
 
-		<profile>
-			<id>test</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<runtime.env>filters/test</runtime.env>
-				<finalName>filters/test</finalName>
-			</properties>
-		</profile>
-		<profile>
-			<id>prd</id>
-			<properties>
-				<runtime.env>filters/prd</runtime.env>
-				<finalName>filters/prd</finalName>
-			</properties>
-		</profile>
+			<profile>
+				<id>test</id>
+				<activation>
+					<activeByDefault>true</activeByDefault>
+				</activation>
+				<properties>
+					<runtime.env>filters/test</runtime.env>
+					<finalName>filters/test</finalName>
+				</properties>
+			</profile>
+			<profile>
+				<id>prd</id>
+				<properties>
+					<runtime.env>filters/prd</runtime.env>
+					<finalName>filters/prd</finalName>
+				</properties>
+			</profile>
 
-	</profiles>
-	-->
+		</profiles>
+		-->
 </project>

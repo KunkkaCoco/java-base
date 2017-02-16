@@ -1,5 +1,7 @@
 package com.extend;
 
+import com.alibaba.fastjson.JSON;
+
 public class ClassC extends ClassB {
     private String name;
     private String sex;
@@ -38,7 +40,7 @@ public class ClassC extends ClassB {
         System.out.println(cb.getName());
         cb.setName("changename");
         System.out.println(cb.getName());
-        System.out.println();
+        System.out.println(JSON.toJSONString(cb)+"***************");
 
         ClassB bb= new ClassB(10, "john");
         System.out.println(bb.getAge());
